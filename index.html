@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="dist/app.css">
   <title>Bryson</title>
 </head>
@@ -14,7 +16,7 @@
     <!-- Aggiungo il logo dentro un div -->
     <div class="cnt-header">
       <div class="logo">
-        <h2>Bryson</h2>
+        <img src="img/logo-img-01.png" alt="logo">
       </div>
       <!-- A destra dell'header aggiungo una nav-bar con dentro una ul e dentro i li verranno stampati dinamicamente -->
       <nav class="main-nav">
@@ -33,13 +35,24 @@
   </header>
   <main>
     <!-- Il main è diviso in diverse sezioni -->
+    <section class="banner">
+      <div class="cnt-big">
+        <div class="cnt-small">
+          <h1>We are Bryson, New York-based art & deign studio</h1>
+          <p class="main--text">Here at Bryson it only takes a smifgen of imagination and we've prepared ourselves for future challenges. Take a peek and see if you recognize a tademark ingredients of our work.</p>
+        </div>
+      </div>
+    </section>
     <!-- ogni sezione ha un container grande e un container piccolo -->
     <!-- la prima sezione è quella con un titolone e un sottotitolo -->
     <!-- il container grande contiene una bg image e il triangolino àncora -->
     <!-- il container piccolo contiene il 'corpo' della pagina  -->
   </main>
+  <footer>
+    <!-- il footer ha la stessa struttura del body ma c'è solo il contenitore piccolo -->
+    <!-- il contenitore piccolo ha il testo centrato -->
 
-
+  </footer>
 
 
  <script src="js/script.js"></script> 
