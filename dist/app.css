@@ -82,6 +82,9 @@ header {
   color: #000000;
   font-weight: 400;
 }
+.list-item a img {
+  margin-top: 9px;
+}
 
 .banner {
   margin-top: 50px;

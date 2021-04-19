@@ -37,4 +37,7 @@ header {
 .list-item a {
   color: $titleColor;
   font-weight: 400;
+  & img {
+    margin-top: 9px;
+  }
 }
