@@ -31,10 +31,12 @@ ul li {
   justify-content: space-between;
   align-items: center;
    & h1 {
-    font-size: 50px;
+    font-size: $mainTitle;
     color: $titleColor;
   }
   & .main--text {
     color:$textColor;
+    font-size: $parFont;
+    font-weight: 300;
   }
 }

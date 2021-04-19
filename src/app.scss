@@ -5,9 +5,20 @@
 
 
 .banner {
-  margin-top: 100px;
+  margin-top: 50px;
+  height: 490px;
 }
 
+
+.cnt-big {
+  background-image: url('../img/h2-background-img-02.png');
+  height: 100%;
+  background-size: 90%;
+  background-position: 1% 0;
+
+}
 .cnt-small h1 {
   margin-right: 50px;
+  height: 100%;
+  margin-top: 100px;
 }
