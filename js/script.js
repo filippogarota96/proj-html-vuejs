@@ -8,8 +8,9 @@ var app = new Vue ({
       "Blog",
       "Shop",
       "Elements",
-      "svg/svg-1.svg"
-    ]
+      "svg/svg-1.svg",
+    ],
+    //navIcon:"svg/svg-1.svg",
   
   },
 

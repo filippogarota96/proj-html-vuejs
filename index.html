@@ -21,9 +21,15 @@
         <!-- A destra dell'header aggiungo una nav-bar con dentro una ul e dentro i li verranno stampati dinamicamente -->
         <nav class="main-nav">
           <ul class="nav__list">
-            <li v-for="(element, index) in navItems" v-if = "element != 'svg/svg-1.svg'" class="list-item"><a href="#">{{element}}</a></li>
+            <li v-for="(element, index) in navItems" v-if="element != 'svg/svg-1.svg' " class="list-item"><a href="#">{{element}}</a></li>
+            <li v-else class="list-item">
+            <a href="">
+            <img :src="element" alt="">
+            </a>
+            </li>
           </ul>
         </nav>
+      
       </div>
       <!-- Ogni list-item è stampato con un v-for di un array dei data che sarà composto da stringhe e un svg -->
     </header>
@@ -31,6 +37,7 @@
       <!-- Il main è diviso in diverse sezioni -->
       <section class="banner">
       <!-- ogni sezione ha un container grande e un container piccolo -->
+      <!-- la prima sezione è quella con un titolone,un sottotitolo e le immagini -->
         <div class="cnt-big bg-img__titles">
           <div class="cnt-title">
             <h1>We are Bryson, New York-based art & deign studio</h1>
@@ -48,16 +55,6 @@
           </div>
         </div>
       </section>
-      <!-- <section class="images">
-        <div class="cnt-big">
-          <div class="cnt-small images__container">
-            <img src="img/port-img-09.jpg" alt="">
-            <img src="img/port-img-10.jpg" alt="">
-          </div>
-        </div>
-      </section> -->
-     
-      <!-- la prima sezione è quella con un titolone e un sottotitolo -->
       <!-- il container grande contiene una bg image e il triangolino àncora -->
       <!-- il container piccolo contiene il 'corpo' della pagina  -->
     </main>

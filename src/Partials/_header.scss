@@ -28,14 +28,13 @@ header {
     text-align: right;
     & .list-item {
       display: inline-block;
+      vertical-align: middle;
       padding: 0 1%;
     }
   }
 }
 
 .list-item a {
-
   color: $titleColor;
   font-weight: 400;
-
 }
