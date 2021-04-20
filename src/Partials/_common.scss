@@ -4,23 +4,34 @@
   box-sizing: border-box;
 }
 
-
-body {
-  font-family: 'Roboto', sans-serif;
-}
-
 main {
   padding-top: 80px;
 
+}
+
+h2, h1, h3  {
+  font-family: $fontFamilyMain;
+}
+
+p {
+  font-family: $fontFamilySecondary;
+  font-size: $parFont;
+  color: $textColor;
 }
 
 ul li {
   list-style: none;
   & a {
     text-decoration: none;
-    
+    font-family: $fontFamilyMain;
+    font-weight: 700px;
   }
 
+}
+
+h2 {
+  color: $mainTitle;
+  font-size: $secondaryTitle;
 }
 
 .cnt-small {
@@ -46,12 +57,7 @@ ul li {
       max-height: 100%;
     }
   }
-
-
-
-
-
-
+// effetto piega delle immagini
 .overlay {
   width: 0;
   position: absolute;
@@ -83,8 +89,9 @@ ul li {
 
 .overlay__title {
   font-size: $overlayTitle;
-  font-weight: 700;
   display: block;
+  font-weight: 500;
+  font-family: $fontFamilyMain;
   
 }
 
@@ -94,24 +101,43 @@ ul li {
 }
  
 // freccia in su per le sezioni
-// .arrow-up {
-//   width: 0; 
-//   height: 0; 
-//   border-left: 50px solid transparent;
-//   border-right: 50px solid transparent;
-//   border-bottom: 50px solid #F6C0AB;
-//   color: orangered;
-//   position: absolute;
-//   right: 20px;
-//   top: 50%;
-//     &::before {
-//       font-family: "Font Awesome 5 Free"; 
-//       font-weight: 700; 
-//       font-size: 0.8em;
-//       content: "\f077";
-//       color: #ffff;
-//       position: absolute;
-//       top: 25px;
-//       right: -6px;
-//     }
-// }
+.arrow-up {
+  width: 0; 
+  height: 0; 
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 50px solid #F6C0AB;
+  color: orangered;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+    &::before {
+      font-family: "Font Awesome 5 Free"; 
+      font-weight: 700; 
+      font-size: 0.8em;
+      content: "\f077";
+      color: #ffff;
+      position: absolute;
+      top: 25px;
+      right: -6px;
+    }
+}
+
+.btn-info {
+ @include button-features;
+ transition: background .5s ease-in-out;
+  
+  &:hover {
+    background-color:$btnBorder;
+    color:$btnHoverColor;
+  }
+}
+
+.btn-info::after {
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 700; 
+  font-size: 0.8em;
+  content: "\f0da";
+  margin-left: 5px;
+  
+}

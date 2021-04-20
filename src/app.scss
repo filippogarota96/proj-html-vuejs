@@ -34,7 +34,7 @@
       font-size: $parFont ;
       padding-left: 80px;
       color: $textColor;
-      font-size: $overlayText;
+      font-size: $parFont;
    }
 }
 
@@ -56,5 +56,18 @@
 .pictures-kids, .friendship-tablet {
   height: $sectionHeight;
   position: relative;
+}
+
+.box-text {
+  margin: 200px 0;
+  width: 50%;
+  & p {
+    padding: 40px 0;
+  }
+}
+
+.cnt-services {
+
+
 }
 

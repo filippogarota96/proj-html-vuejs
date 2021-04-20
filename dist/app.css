@@ -1,15 +1,22 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-}
-
 main {
   padding-top: 80px;
+}
+
+h2, h1, h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-family: "Karma", serif;
+  font-size: 18px;
+  color: #6D6E71;
 }
 
 ul li {
@@ -17,6 +24,13 @@ ul li {
 }
 ul li a {
   text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700px;
+}
+
+h2 {
+  color: 45px;
+  font-size: 45px;
 }
 
 .cnt-small {
@@ -74,13 +88,61 @@ ul li a {
 
 .overlay__title {
   font-size: 20px;
-  font-weight: 700;
   display: block;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
 }
 
 .overlay__text {
   color: #6D6E71;
-  font-size: 10px;
+  font-size: 12px;
+}
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 50px solid #F6C0AB;
+  color: orangered;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+}
+.arrow-up::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  font-size: 0.8em;
+  content: "";
+  color: #ffff;
+  position: absolute;
+  top: 25px;
+  right: -6px;
+}
+
+.btn-info {
+  background: transparent;
+  width: 200px;
+  padding: 20px 0;
+  border: none;
+  border: 2px solid #80ABAE;
+  border-radius: 50px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background 0.5s ease-in-out;
+}
+.btn-info:hover {
+  background-color: #80ABAE;
+  color: #ffff;
+}
+
+.btn-info::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  font-size: 0.8em;
+  content: "";
+  margin-left: 5px;
 }
 
 header {
@@ -154,7 +216,7 @@ header {
   font-size: 18px;
   padding-left: 80px;
   color: #6D6E71;
-  font-size: 10px;
+  font-size: 18px;
 }
 
 .images__container {
@@ -173,4 +235,12 @@ header {
 .pictures-kids, .friendship-tablet {
   height: 500px;
   position: relative;
+}
+
+.box-text {
+  margin: 200px 0;
+  width: 50%;
+}
+.box-text p {
+  padding: 40px 0;
 }
