@@ -60,24 +60,24 @@ ul li {
   top: 0;
   left: 0;
   transition: 0.8s border-width ease-out;
-  &:hover {
+}
+  .image:hover .overlay {
     border-width: 100px;
     border-radius: 0;
     border-color: #ffff #FDE4D7 #FDE4D7 #ffff; 
     background: #ffff;
    }
-}
 
 .diagonal {
   width: 120px;
-  transform: rotate(-45deg);
+  transform: rotate(-47deg);
   position: absolute;
-  bottom: -57px;
-  right: -100px;
+  bottom: -37px;
+  right: -87px;
   display: none;
 } 
 
-  .overlay:hover .diagonal {
+  .image:hover  .overlay > .diagonal {
    display: block;
   }
 
