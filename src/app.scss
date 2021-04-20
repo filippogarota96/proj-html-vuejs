@@ -60,14 +60,27 @@
 
 .box-text {
   margin: 200px 0;
-  width: 50%;
+  width: 40%;
   & p {
     padding: 40px 0;
   }
 }
 
-.cnt-services {
-
-
+.cnt-sevices {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10%;
 }
 
+.box__service {
+  display: flex;
+  width: 50%;
+  padding: 29px 0;
+  align-items: center;
+  padding-right: 1px;
+    & img {
+      margin-right: 10px;
+    }
+      
+}

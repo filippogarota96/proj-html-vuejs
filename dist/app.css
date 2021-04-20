@@ -33,6 +33,11 @@ h2 {
   font-size: 45px;
 }
 
+h3 {
+  color: #000000;
+  font-size: 20px;
+}
+
 .cnt-small {
   max-width: 1033px;
   margin: 0 auto;
@@ -239,8 +244,26 @@ header {
 
 .box-text {
   margin: 200px 0;
-  width: 50%;
+  width: 40%;
 }
 .box-text p {
   padding: 40px 0;
+}
+
+.cnt-sevices {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10%;
+}
+
+.box__service {
+  display: flex;
+  width: 50%;
+  padding: 29px 0;
+  align-items: center;
+  padding-right: 1px;
+}
+.box__service img {
+  margin-right: 10px;
 }

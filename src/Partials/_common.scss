@@ -26,14 +26,16 @@ ul li {
     font-family: $fontFamilyMain;
     font-weight: 700px;
   }
-
 }
 
 h2 {
   color: $mainTitle;
   font-size: $secondaryTitle;
 }
-
+h3 {
+  color: $titleColor;
+  font-size: 20px;
+}
 .cnt-small {
   max-width: $cntSmall;
   margin: 0 auto;
