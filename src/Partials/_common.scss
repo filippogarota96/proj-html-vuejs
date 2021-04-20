@@ -69,19 +69,28 @@ ul li {
 }
 
 .diagonal {
-  background: red;
-  width: 100%;
+  width: 120px;
+  transform: rotate(-45deg);
+  position: absolute;
+  bottom: -57px;
+  right: -100px;
+  display: none;
 } 
+
+  .overlay:hover .diagonal {
+   display: block;
+  }
+
 .overlay__title {
   font-size: $overlayTitle;
   font-weight: 700;
+  display: block;
   
 }
 
 .overlay__text {
   color: $textColor;
   font-size:$overlayText;
-  transform: rotate(-90deg);
 }
  
 // freccia in su per le sezioni
