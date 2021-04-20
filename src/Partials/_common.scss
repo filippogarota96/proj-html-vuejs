@@ -10,7 +10,6 @@ body {
 }
 
 main {
-  height: calc(100% - 80px);
   padding-top: 80px;
 
 }
@@ -40,9 +39,29 @@ ul li {
 }
 
 .images__container {
-  height: 400px;
-  margin-top: 150px;
-   & img {
-    height: 100%;
-   }
+  margin-top: 12em;
+
 }
+ 
+ .image {
+    width: 50%;
+    & img {
+      max-width: 100%;
+    }
+  }
+
+
+.overlay {
+  height: 200px;
+  width: 200px;
+  background: #ffff;
+  opacity:0;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+    &:hover {
+      opacity: 1;
+    }
+}
+
