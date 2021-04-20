@@ -41,14 +41,19 @@
 .images__container {
   width: 100%;
   height: 100%;
+  margin-top: 12em;
+
 }
 
 .images__bg {
   background-image: url('../img/h2-background-img-02\ \(1\).png');
   background-size: contain;
   background-position: -305% 0;
+  background-repeat: repeat-x;
 }
 
-.pictures-kids {
-  height: 500px;
+.pictures-kids, .friendship-tablet {
+  height: $sectionHeight;
+  position: relative;
 }
+
