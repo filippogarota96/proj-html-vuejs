@@ -4,7 +4,7 @@
 @import "Partials/footer";
 
 
-.banner {
+#banner {
   margin-top: 50px;
   height: 850px;
 }
@@ -187,4 +187,72 @@
 }
 #submit {
  padding-top: 40px;
+}
+
+
+// freccia in su per le sezioni
+.arrow-up {
+  width: 0; 
+  height: 0; 
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 50px solid #F6C0AB;
+  color: orangered;
+  position: absolute;
+  z-index: 1000;
+  bottom: 30px;
+  right: 30px;
+    &::before {
+      font-family: "Font Awesome 5 Free"; 
+      font-weight: 700; 
+      font-size: 0.8em;
+      content: "\f077";
+      color: #ffff;
+      position: absolute;
+      bottom: -38px;
+      right: -6px;
+    }
+}
+
+.icons-sticky {
+  position: sticky;
+  width: 100%;
+}
+
+.icons__cnt {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  bottom: 100px;
+  
+    & a {
+      height: 45%;
+      width: 45%;
+      position: relative;
+      
+    }
+}
+#circle {
+  background: #EE2852;
+    & img {
+    position: absolute;
+      height: 25px;
+      top:50%;
+      left:50%;
+      transform: translate(-50%, -50%);
+    }
+}
+
+#shop {
+  background:#fff;
+     & img {
+    position: absolute;
+      height: 25px;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
 }

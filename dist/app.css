@@ -103,28 +103,6 @@ h3 {
   font-size: 12px;
 }
 
-.arrow-up {
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 50px solid #F6C0AB;
-  color: orangered;
-  position: absolute;
-  right: 20px;
-  top: 50%;
-}
-.arrow-up::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 700;
-  font-size: 0.8em;
-  content: "";
-  color: #ffff;
-  position: absolute;
-  top: 25px;
-  right: -6px;
-}
-
 .btn-info {
   background: transparent;
   width: 200px;
@@ -201,14 +179,22 @@ header {
 footer {
   background-image: url("../../img/h2-footer-img-01.jpg");
   background-size: contain;
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   height: 351px;
+  position: relative;
+}
+footer .footer__logo {
+  margin: 20px auto;
 }
 
 .footer-box {
   width: 40%;
   text-align: center;
   margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .social__list {
@@ -271,7 +257,7 @@ footer {
   background: #E1B263;
 }
 
-.banner {
+#banner {
   margin-top: 50px;
   height: 850px;
 }
@@ -457,4 +443,69 @@ footer {
 
 #submit {
   padding-top: 40px;
+}
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 50px solid #F6C0AB;
+  color: orangered;
+  position: absolute;
+  z-index: 1000;
+  bottom: 30px;
+  right: 30px;
+}
+.arrow-up::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  font-size: 0.8em;
+  content: "";
+  color: #ffff;
+  position: absolute;
+  bottom: -38px;
+  right: -6px;
+}
+
+.icons-sticky {
+  position: sticky;
+  width: 100%;
+}
+
+.icons__cnt {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  bottom: 100px;
+}
+.icons__cnt a {
+  height: 45%;
+  width: 45%;
+  position: relative;
+}
+
+#circle {
+  background: #EE2852;
+}
+#circle img {
+  position: absolute;
+  height: 25px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#shop {
+  background: #fff;
+}
+#shop img {
+  position: absolute;
+  height: 25px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

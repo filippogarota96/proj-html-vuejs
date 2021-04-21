@@ -102,28 +102,7 @@ h3 {
   font-size:$overlayText;
 }
  
-// freccia in su per le sezioni
-.arrow-up {
-  width: 0; 
-  height: 0; 
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 50px solid #F6C0AB;
-  color: orangered;
-  position: absolute;
-  right: 20px;
-  top: 50%;
-    &::before {
-      font-family: "Font Awesome 5 Free"; 
-      font-weight: 700; 
-      font-size: 0.8em;
-      content: "\f077";
-      color: #ffff;
-      position: absolute;
-      top: 25px;
-      right: -6px;
-    }
-}
+
 
 .btn-info {
  @include button-features;

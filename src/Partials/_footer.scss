@@ -1,14 +1,23 @@
 footer {
   background-image: url('../../img/h2-footer-img-01.jpg');
   background-size: contain;
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   height: 351px;
+  position: relative;
+    & .footer__logo {
+      margin: 20px auto;
+    }
 }
+
 
 .footer-box {
   width: 40%;
   text-align: center;
   margin: 0 auto;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .social__list {
