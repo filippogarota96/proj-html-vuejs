@@ -223,9 +223,13 @@
     
     </main>
     <footer>
-      <!-- il footer ha la stessa struttura del body ma c'è solo il contenitore piccolo -->
-      <!-- il contenitore piccolo ha il testo centrato -->
-
+      <div class="footer-box">
+        <img src="img/logo-img-01.png" alt="logo">
+        <p>Sometimes doing something seemingly demanding turns out to be fun.Here's the proof - Bryson, your brand new portfolio</p>
+        <ul class="social__list">
+          <li v-for="social in socials"><a href="#">{{social}}</a></li>
+        </ul>
+      </div>
     </footer>
   </div>
  <script src="js/script.js"></script> 
