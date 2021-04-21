@@ -207,6 +207,7 @@ header {
   background-image: url(../img/h2-background-img-02.png);
   background-size: 90%;
   background-position: 1% 80%;
+  background-repeat: no-repeat;
   height: 476px;
 }
 
@@ -234,10 +235,10 @@ header {
   margin-top: 12em;
 }
 
-.images__bg {
+#images__bg {
   background-image: url("../img/h2-background-img-02 (1).png");
-  background-size: contain;
-  background-position: -305% 0;
+  background-size: cover;
+  background-position: 0 94%;
   background-repeat: repeat-x;
 }
 
