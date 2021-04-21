@@ -58,32 +58,52 @@
   position: relative;
 }
 
+
+#we-do {
+  height: 630px;
+  padding-top: 100px;
+}
 .box-text {
-  margin: 200px 0;
-  width: 40%;
+  width: 35%;
   & p {
     padding: 40px 0;
   }
 }
 
 .cnt-sevices {
-  width: 50%;
+  width: 60%;
+  height: 500px;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 10%;
+  margin-left: 5%;
+  background: white;
+  padding-top: 50px;
 }
 
 .box__service {
   display: flex;
-  width: 50%;
-  padding: 29px 0;
+  width: 45%;
+  height: 35%;
   align-items: center;
-  padding-right: 1px;
+  justify-content: center;
+  padding-left: 10px;
+  border: none;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  transition: border 0.3s ease;
+    &:hover {
+      border: 2px solid #EFB6A4;
+    }
     & img {
-      margin-right: 10px;
-    } 
+      margin-right: 17px;
+      margin-left: 10px;
+    }
       
 }
+.box__service:nth-child(2n - 1) {
+  margin-right: 20px;
+}
+
 #video {
   margin-bottom: 200px;
   padding: 0 60px;
