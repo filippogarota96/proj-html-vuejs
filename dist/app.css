@@ -29,13 +29,13 @@ ul li a {
 }
 
 h2 {
-  color: 45px;
-  font-size: 45px;
+  color: 50px;
+  font-size: 50px;
 }
 
 h3 {
   color: #000000;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .cnt-small {
@@ -128,18 +128,22 @@ h3 {
 .btn-info {
   background: transparent;
   width: 200px;
-  padding: 20px 0;
+  padding: 15px 0;
   border: none;
   border: 2px solid #80ABAE;
   border-radius: 50px;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 600;
+  cursor: pointer;
   transition: background 0.5s ease-in-out;
 }
 .btn-info:hover {
   background-color: #80ABAE;
   color: #ffff;
+}
+.btn-info:focus {
+  outline: none;
 }
 
 .btn-info::after {
@@ -214,7 +218,7 @@ header {
 }
 .cnt-title h1 {
   width: 40%;
-  font-size: 45px;
+  font-size: 50px;
 }
 .cnt-title .main--text {
   width: 60%;
@@ -255,11 +259,11 @@ header {
 }
 
 .cnt-sevices {
-  width: 60%;
+  width: 55%;
   height: 500px;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 5%;
+  margin-left: 10%;
   background: white;
   padding-top: 50px;
 }
@@ -289,13 +293,13 @@ header {
 }
 
 #video {
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   padding: 0 60px;
 }
 
 #video .cnt-big {
   max-width: 100%;
-  height: 600px;
+  height: 800px;
   background-image: url("../img/h2-img-2.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -306,4 +310,77 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+#cards {
+  height: 900px;
+  background-image: url("../img/h2-background-img-03.png");
+  background-position: 100% 65%;
+  padding: 100px 0;
+}
+
+.card {
+  text-align: center;
+  width: 30%;
+  height: 600px;
+  border: 2px solid #F1BBAA;
+  border-radius: 30px;
+  padding: 86px 0;
+}
+.card ul {
+  margin: 30px 0;
+}
+.card ul li {
+  padding: 1% 0;
+}
+
+.card:nth-child(2n) {
+  background: #E6F3F0;
+  border: none;
+}
+
+.prize--item {
+  font-size: 50px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+#get-in-touch {
+  margin: 150px 0;
+}
+
+.comment__input {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.data__input {
+  width: 40%;
+  margin-right: 40px;
+}
+
+.touch__input {
+  border: none;
+  border-bottom: 2px solid black;
+  padding: 15px 2px;
+  font-family: "Karma", serif;
+  font-size: 18px;
+  outline: none;
+  color: #6D6E71;
+}
+
+.get-in-touch__text {
+  width: 40%;
+  margin-left: 10px;
+}
+.get-in-touch__text p {
+  margin-top: 30px;
+}
+
+.get-in-touch__form {
+  width: 50%;
+}
+
+#submit {
+  padding-top: 40px;
 }

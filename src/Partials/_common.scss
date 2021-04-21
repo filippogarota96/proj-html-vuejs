@@ -34,7 +34,7 @@ h2 {
 }
 h3 {
   color: $titleColor;
-  font-size: 25px;
+  font-size: $fontTitleSecondary;
 }
 .cnt-small {
   max-width: $cntSmall;
@@ -133,6 +133,9 @@ h3 {
     background-color:$btnBorder;
     color:$btnHoverColor;
   }
+  &:focus {
+    outline: none;
+  }
 }
 
 .btn-info::after {
@@ -141,5 +144,4 @@ h3 {
   font-size: 0.8em;
   content: "\f0da";
   margin-left: 5px;
-  
 }
