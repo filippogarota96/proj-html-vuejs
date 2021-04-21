@@ -136,6 +136,7 @@
   border: 2px solid $boxBorder;
   border-radius: 30px;
   padding: 86px 0;
+  transition: all 0.5s ease-in-out;
     & ul {
       margin: 30px 0;
       & li {
@@ -143,7 +144,9 @@
       }
     }
 }
-
+.card:hover {
+  transform:scale(1.1);
+}
 .card:nth-child(2n) {
   background:$centralCard;
   border: none;

@@ -167,6 +167,13 @@ header {
   vertical-align: middle;
   padding: 0 1%;
 }
+.main-nav .nav__list .list-item a {
+  padding-bottom: 8px;
+}
+
+.active {
+  border-bottom: 2px solid #E19074;
+}
 
 .list-item a {
   color: #000000;
@@ -177,11 +184,12 @@ header {
 }
 
 footer {
+  background: #E4EEED;
+  height: 261px;
+  position: relative;
   background-image: url("../../img/h2-footer-img-01.jpg");
   background-size: contain;
-  background-repeat: repeat-x;
-  height: 351px;
-  position: relative;
+  background-repeat: no-repeat;
 }
 footer .footer__logo {
   margin: 20px auto;
@@ -386,12 +394,17 @@ footer .footer__logo {
   border: 2px solid #F1BBAA;
   border-radius: 30px;
   padding: 86px 0;
+  transition: all 0.5s ease-in-out;
 }
 .card ul {
   margin: 30px 0;
 }
 .card ul li {
   padding: 1% 0;
+}
+
+.card:hover {
+  transform: scale(1.1);
 }
 
 .card:nth-child(2n) {

@@ -1,14 +1,14 @@
 footer {
+  background: #E4EEED;
+  height: 261px;
+  position: relative;
   background-image: url('../../img/h2-footer-img-01.jpg');
   background-size: contain;
-  background-repeat: repeat-x;
-  height: 351px;
-  position: relative;
+  background-repeat: no-repeat;
     & .footer__logo {
       margin: 20px auto;
     }
 }
-
 
 .footer-box {
   width: 40%;

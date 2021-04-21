@@ -30,10 +30,15 @@ header {
       display: inline-block;
       vertical-align: middle;
       padding: 0 1%;
+      & a {
+        padding-bottom: 8px;
+      }
     }
   }
 }
-
+.active {
+  border-bottom: 2px solid $listBorder;
+}
 .list-item a {
   color: $titleColor;
   font-weight: 400;

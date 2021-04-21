@@ -27,7 +27,9 @@
         <!-- A destra dell'header aggiungo una nav-bar con dentro una ul e dentro i li verranno stampati dinamicamente -->
         <nav class="main-nav">
           <ul class="nav__list">
-            <li v-for="(element, index) in navItems" v-if="element != 'svg/svg-1.svg' " class="list-item"><a href="#">{{element}}</a></li>
+            <li v-for="(element, index) in navItems" v-if="element != 'svg/svg-1.svg'" class="list-item">
+            <a href="#" :class ="elementActive == index ? 'active' : '' " @click="elementActive = index">{{element}}</a>
+            </li>
             <li v-else class="list-item">
             <a href="">
               <img :src="element" alt="">
@@ -156,7 +158,7 @@
       <!-- sezione del video -->
       <section id="video">
         <div class="cnt-big">
-          <img src="img/main-home-video-button-img-01.png" alt="">
+            <img src="img/main-home-video-button-img-01.png" alt="video">
         </div>
       </section>
       <!-- sezione delle cards --> 
@@ -230,7 +232,7 @@
           <li v-for="social in socials" class="social-item "><a href="#" :class="social.class"><i :class="social.tag"></i></a></li>
         </ul>
       </div>
-    <a href="#" class="arrow-up"></a>
+      <a href="#" class="arrow-up"></a>
     </footer>
   </div>
  <script src="js/script.js"></script> 

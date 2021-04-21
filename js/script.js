@@ -8,14 +8,14 @@ var app = new Vue ({
       "Blog",
       "Shop",
       "Elements",
-      "svg/svg-1.svg",
+      "svg/svg-1.svg"
     ],
     socials: [
-      
       {
         tag: "fab fa-instagram",
         class: 'instagram'
       },
+      
       {
         tag: "fab fa-facebook-f",
         class: 'facebook'
@@ -29,6 +29,11 @@ var app = new Vue ({
         class: 'pinterest'
       },
     ],
+    elementActive: 0
+ },
+ beforeMount: {
+    loading: function () {
+      alert('ciao');
+    } 
  }
 });
-
