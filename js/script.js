@@ -11,11 +11,24 @@ var app = new Vue ({
       "svg/svg-1.svg",
     ],
     socials: [
-      '<p>ciao</p>',
-      '<i class="fab fa-facebook-f"></i>',
-      '<i class="fab fa-twitter"></i>',
-      '<i class="fab fa-pinterest-p"></i>',
-    ], 
-  
-  },
-})
+      
+      {
+        tag: "fab fa-instagram",
+        class: 'instagram'
+      },
+      {
+        tag: "fab fa-facebook-f",
+        class: 'facebook'
+      },
+      {
+        tag: "fab fa-twitter",
+        class: 'twitter'
+      },
+      {
+        tag: "fab  fa-pinterest-p",
+        class: 'pinterest'
+      },
+    ],
+ }
+});
+

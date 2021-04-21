@@ -198,6 +198,79 @@ header {
   margin-top: 9px;
 }
 
+footer {
+  background-image: url("../../img/h2-footer-img-01.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 351px;
+}
+
+.footer-box {
+  width: 40%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.social__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.social-item {
+  padding: 0 1%;
+}
+.social-item a {
+  color: white;
+  font-size: 18px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  position: relative;
+  padding: 6px 13px;
+  display: block;
+}
+.social-item a i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.instagram {
+  background: #69A9AA;
+  transition: background 0.5s ease;
+}
+.instagram:hover {
+  background: #E1B263;
+}
+
+.facebook {
+  padding: 6px 13px;
+  background: #F7D293;
+  transition: background 0.5s ease;
+}
+.facebook:hover {
+  background: #E1B263;
+}
+
+.twitter {
+  background: #F7BCA8;
+  transition: background 0.5s ease;
+}
+.twitter:hover {
+  background: #E1B263;
+}
+
+.pinterest {
+  background: #D8D597;
+  transition: background 0.5s ease;
+}
+.pinterest:hover {
+  background: #E1B263;
+}
+
 .banner {
   margin-top: 50px;
   height: 850px;
