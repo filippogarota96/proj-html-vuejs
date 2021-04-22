@@ -148,7 +148,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 40px;
+  margin: 0 30px;
 }
 
 .logo {
@@ -341,6 +341,23 @@ footer .footer__logo {
   position: relative;
 }
 
+.pictures-kids {
+  position: relative;
+}
+.pictures-kids .social-aside {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+.pictures-kids .social-aside a {
+  color: #000000;
+}
+
+.social-aside li {
+  padding: 4px 0;
+}
+
 #we-do {
   height: 630px;
   padding-top: 100px;
@@ -499,7 +516,7 @@ footer .footer__logo {
 }
 
 #shop {
-  background-color: white;
+  background-color: #fff;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 

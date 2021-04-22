@@ -60,7 +60,22 @@
   position: relative;
 }
 
-
+.pictures-kids {
+  position:relative;
+   & .social-aside {
+      position: absolute;
+      top: 50%;
+      left:20px;
+      transform: translateY(-50%);
+      & a {
+        color: $titleColor;
+      }
+   }
+}
+.social-aside li {
+  padding: 4px 0;
+  
+}
 //sezione we do
 #we-do {
   height: 630px;
@@ -216,7 +231,7 @@
 }
 
 #shop {
-  background-color: white;
+  background-color: $iconStickyShop;
   box-shadow: 1px 1px 1px 1px  rgba($color: #000000, $alpha: 0.1);
 }
 
