@@ -344,23 +344,10 @@ footer .footer__logo {
 .pictures-kids {
   position: relative;
 }
-.pictures-kids .social-aside {
-  position: absolute;
-  top: 50%;
-  left: 20px;
-  transform: translateY(-50%);
-}
-.pictures-kids .social-aside a {
-  color: #000000;
-}
-
-.social-aside li {
-  padding: 4px 0;
-}
 
 #we-do {
-  height: 630px;
-  padding-top: 100px;
+  height: 500px;
+  margin: 100px 0;
 }
 
 .box-text {
@@ -502,7 +489,7 @@ footer .footer__logo {
 }
 
 .icons-sticky {
-  height: 100px;
+  height: 300px;
   width: 50px;
   margin-left: 100px;
   position: sticky;
@@ -530,4 +517,19 @@ footer .footer__logo {
 .btn-icon img {
   height: 40px;
   padding: 5px;
+}
+
+.social-aside {
+  position: sticky;
+  text-align: center;
+  padding-right: 16px;
+  margin-bottom: 64px;
+  z-index: 1000;
+}
+.social-aside a {
+  color: #000000;
+}
+
+.social-aside li {
+  padding: 4px 0;
 }

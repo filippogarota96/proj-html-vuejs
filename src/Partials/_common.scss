@@ -89,9 +89,9 @@ ul li {
   display: none;
 } 
 
-  .image:hover  .overlay > .diagonal {
-   display: block;
-  }
+.image:hover  .overlay > .diagonal {
+  display: block;
+}
 
 .overlay__title {
   font-size: $overlayTitle;

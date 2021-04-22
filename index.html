@@ -19,7 +19,6 @@
 <body>
   <div id="app">
     <header>
-      <!-- Aggiungo il logo dentro un div -->
       <div class="cnt-header">
         <div class="logo">
           <img src="img/logo-img-01.png" alt="logo">
@@ -30,7 +29,7 @@
             <li v-for="(element, index) in navItems" v-if="element != 'svg/svg-1.svg'" class="list-item">
             <a href="#" :class ="elementActive == index ? 'active' : '' " @click="elementActive = index">{{element}}</a>
             </li>
-        <!-- per stampare l'immagine nell'array uso una condizione e una src dinamici -->
+        <!-- per stampare l'immagine dell'array uso una condizione e una src dinamici -->
             <li v-else class="list-item">
             <a href="">
               <img :src="element" alt="">
@@ -40,7 +39,6 @@
         </nav>
       
       </div>
-      <!-- Ogni list-item è stampato con un v-for di un array dei data che sarà composto da stringhe e un svg -->
     </header>
     <main>
       <!-- Il main è diviso in diverse sezioni -->
@@ -78,14 +76,7 @@
     <div id="images__bg">
       <!-- seconda riga di immagini -->
       <section class="pictures-kids" >
-        <div class="social-aside">
-          <ul>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-          </ul>
-        </div>
+        <!-- A sinistra di questa sezione inserisco una piccola nav con icone dei social -->
         <div class="bg-big ">
           <div class="cnt-small">
             <div class="image">
@@ -233,8 +224,16 @@
     </main>
     <!-- icone sticky -->
     <div class="icons-sticky">
-          <button class="btn-icon" id="circle"><img src="svg/svg-2.svg" alt=""></button>
-          <button class="btn-icon" id="shop"><img src="svg/svg-4.svg" alt=""></button>
+      <div class="social-aside">
+          <ul>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+          </ul>
+      </div>
+        <button class="btn-icon" id="circle"><img src="svg/svg-2.svg" alt=""></button>
+        <button class="btn-icon" id="shop"><img src="svg/svg-4.svg" alt=""></button>
     </div>
     <footer>
       <div class="footer-box">

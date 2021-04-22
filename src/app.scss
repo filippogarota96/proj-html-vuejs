@@ -62,24 +62,13 @@
 
 .pictures-kids {
   position:relative;
-   & .social-aside {
-      position: absolute;
-      top: 50%;
-      left:20px;
-      transform: translateY(-50%);
-      & a {
-        color: $titleColor;
-      }
-   }
-}
-.social-aside li {
-  padding: 4px 0;
-  
+   
+   
 }
 //sezione we do
 #we-do {
-  height: 630px;
-  padding-top: 100px;
+  height: $sectionHeight;
+  margin: 100px 0;
 }
 .box-text {
   width: 35%;
@@ -129,7 +118,7 @@
 }
 #video .cnt-big {
   max-width: 100%;
-  height: 800px;
+  height: $videoSectionHeight;
   background-image: url('../img/h2-img-2.jpg');
   background-attachment: fixed ;
   background-repeat: no-repeat;
@@ -144,7 +133,7 @@
 
 //stile sezione delle cards
 #cards {
-  height: 900px;
+  height: $cardSectionHeight;
   background-image: url('../img/h2-background-img-03.png');
   background-position: 100% 65%;
   padding: 100px 0;
@@ -174,7 +163,7 @@
 }
 
 .prize--item {
-  font-size: 50px;
+  font-size: $prizeItem;
   font-weight: 700;
   font-family: $fontFamilyMain;
 }
@@ -209,6 +198,7 @@
 .get-in-touch__form {
   width: 50%;
 }
+
 #submit {
  padding-top: 40px;
 }
@@ -217,7 +207,7 @@
 //iconcine sticky 
 
 .icons-sticky {
-  height: 100px;
+  height: 300px;
   width: 50px;
   margin-left: 100px;
   position: sticky;
@@ -245,5 +235,21 @@
       height: 40px;
       padding: 5px;
     }
+}
+.social-aside {  
+    position: sticky;
+    text-align: center;
+    padding-right: 16px;
+    margin-bottom: 64px;
+    z-index: 1000;
+    
+
+      & a {
+        color: $titleColor;
+      }
+}
+.social-aside li {
+  padding: 4px 0;
+  
 }
 
