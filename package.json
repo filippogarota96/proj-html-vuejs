@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "laravel-mix": "^6.0.16",
+    "laravel-mix": "^6.0.18",
     "postcss": "^8.1.14",
     "sass": "^1.32.10",
     "sass-loader": "^11.0.1"

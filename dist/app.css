@@ -190,6 +190,7 @@ footer {
   background-image: url("../../img/h2-footer-img-01.jpg");
   background-size: contain;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 footer .footer__logo {
   margin: 20px auto;
@@ -265,6 +266,46 @@ footer .footer__logo {
   background: #E1B263;
 }
 
+.icons-sticky {
+  height: 100px;
+  width: 50px;
+  margin-left: 100px;
+  position: sticky;
+  left: 96%;
+  bottom: 200px;
+}
+
+#circle {
+  margin-bottom: 10px;
+  background-color: red;
+}
+
+#shop {
+  background-color: white;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.btn-icon {
+  border: none;
+  width: 100%;
+  height: 50px;
+  outline: none;
+  cursor: pointer;
+}
+.btn-icon img {
+  height: 40px;
+  padding: 5px;
+}
+
+.sticky-social {
+  height: 200px;
+  position: sticky;
+  left: 96%;
+  bottom: 700px;
+  z-index: 100;
+  margin-bottom: 100px;
+}
+
 #banner {
   margin-top: 50px;
   height: 850px;
@@ -292,6 +333,7 @@ footer .footer__logo {
   width: 60%;
   font-size: 18px;
   padding-left: 80px;
+  padding-right: 30px;
   color: #6D6E71;
   font-size: 18px;
 }
@@ -332,7 +374,6 @@ footer .footer__logo {
   display: flex;
   flex-wrap: wrap;
   margin-left: 10%;
-  background: white;
   padding-top: 50px;
 }
 
@@ -479,46 +520,4 @@ footer .footer__logo {
   position: absolute;
   bottom: -38px;
   right: -6px;
-}
-
-.icons-sticky {
-  position: sticky;
-  width: 100%;
-}
-
-.icons__cnt {
-  height: 100px;
-  width: 100px;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  right: 0;
-  bottom: 100px;
-}
-.icons__cnt a {
-  height: 45%;
-  width: 45%;
-  position: relative;
-}
-
-#circle {
-  background: #EE2852;
-}
-#circle img {
-  position: absolute;
-  height: 25px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#shop {
-  background: #fff;
-}
-#shop img {
-  position: absolute;
-  height: 25px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }

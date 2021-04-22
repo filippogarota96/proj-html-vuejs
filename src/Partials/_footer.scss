@@ -5,6 +5,7 @@ footer {
   background-image: url('../../img/h2-footer-img-01.jpg');
   background-size: contain;
   background-repeat: no-repeat;
+  overflow: hidden;
     & .footer__logo {
       margin: 20px auto;
     }
@@ -78,4 +79,46 @@ footer {
     &:hover {
         background: #E1B263;
       }
+}
+
+
+
+.icons-sticky {
+  height: 100px;
+  width: 50px;
+  margin-left: 100px;
+  position: sticky;
+  left: 96%;
+  bottom: 200px;
+}
+
+#circle {
+  margin-bottom: 10px;
+  background-color: red;
+}
+
+#shop {
+  background-color: white;
+  box-shadow: 1px 1px 1px 1px  rgba($color: #000000, $alpha: 0.1);
+}
+
+.btn-icon {
+  border: none;
+  width: 100%;
+  height: 50px;
+  outline: none;
+  cursor: pointer;
+    & img {
+      height: 40px;
+      padding: 5px;
+    }
+}
+
+.sticky-social {
+  height: 200px;
+  position: sticky;
+  left: 96%;
+  bottom: 700px;
+  z-index: 100;
+  margin-bottom: 100px;
 }
