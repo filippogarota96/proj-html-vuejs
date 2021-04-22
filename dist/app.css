@@ -227,12 +227,17 @@ footer .footer__logo {
   position: relative;
   padding: 6px 13px;
   display: block;
+  transition: 0.5s all ease-in-out;
 }
 .social-item a i {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.social-item:hover {
+  transform: scale(1.2);
 }
 
 .instagram {

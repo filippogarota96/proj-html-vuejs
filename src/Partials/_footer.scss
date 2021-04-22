@@ -41,6 +41,7 @@ footer {
       position: relative;
       padding: 6px 13px;
       display: block;
+      transition: 0.5s all ease-in-out;
        & i {
         position: absolute;
         top:50%;
@@ -49,21 +50,23 @@ footer {
        }
     }
 }
-
+.social-item:hover {
+  transform: scale(1.2);
+}
 .instagram {
   background: $instagramColor;
   transition: background 0.5s ease;
     &:hover {
-      background:#E1B263;
+      background:$socialColorHover;
     }
 }
 
 .facebook {
   padding: 6px 13px;
-  background: #F7D293;
+  background: $facebookColor;
   transition: background 0.5s ease;
     &:hover {
-      background: #E1B263;
+      background: $socialColorHover;
     }
 }
 
@@ -71,7 +74,7 @@ footer {
  background:#F7BCA8;
  transition: background 0.5s ease;
   &:hover {
-      background: #E1B263;
+      background: $socialColorHover;
     }
 }
 
@@ -79,7 +82,7 @@ footer {
   background:#D8D597;
   transition: background 0.5s ease;
     &:hover {
-        background: #E1B263;
+        background: $socialColorHover;
       }
 }
 
