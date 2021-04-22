@@ -1,7 +1,7 @@
 
 //Colors
 $titleColor : #000000;
-$tileSecondary: #2D2A2B;
+$titleSecondary:#1A706A;
 $textColor: #6D6E71;
 $btnBorder: #80ABAE;
 $btnHoverColor:#ffff;
@@ -12,6 +12,7 @@ $centralCard:#E6F3F0;
 $instagramColor:#69A9AA;
 $instagramColorHover: #629C7C;
 $listBorder: #E19074;
+$iconSticky: #EF2853;
 
 //fonts 
 $fontFamilyMain: 'Poppins', sans-serif;
@@ -28,7 +29,6 @@ $overlayText: 12px;
 $overlayTitle: 20px;
 
 //button 
-
 @mixin button-features {
   background: transparent;
   width: 200px;
@@ -41,7 +41,7 @@ $overlayTitle: 20px;
   font-weight: 600;
   cursor: pointer;
 }
-
+//stile degli input text
  @mixin input-text-features {
     border: none;
     border-bottom: 2px solid black;

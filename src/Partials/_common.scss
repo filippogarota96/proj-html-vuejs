@@ -9,10 +9,16 @@ main {
 
 }
 
-h2, h1, h3  {
+h1 {
   font-family: $fontFamilyMain;
 }
-
+h2 {
+  font-family: $fontFamilyMain;
+  color: $titleSecondary;
+}
+h3 {
+  font-family: $fontFamilyMain;
+}
 p {
   font-family: $fontFamilySecondary;
   font-size: $parFont;
@@ -102,7 +108,7 @@ h3 {
   font-size:$overlayText;
 }
  
-
+//stile dei bottoni
 
 .btn-info {
  @include button-features;

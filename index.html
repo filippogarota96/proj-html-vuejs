@@ -30,6 +30,7 @@
             <li v-for="(element, index) in navItems" v-if="element != 'svg/svg-1.svg'" class="list-item">
             <a href="#" :class ="elementActive == index ? 'active' : '' " @click="elementActive = index">{{element}}</a>
             </li>
+        <!-- per stampare l'immagine nell'array uso una condizione e una src dinamica -->
             <li v-else class="list-item">
             <a href="">
               <img :src="element" alt="">
@@ -161,7 +162,7 @@
             <img src="img/main-home-video-button-img-01.png" alt="video">
         </div>
       </section>
-      <!-- sezione delle cards --> 
+      <!-- sezione delle 3 cards  --> 
       <section id="cards"> 
         <div class="cnt-small">
           <div class="card">
@@ -202,6 +203,7 @@
           </div>
         </div>
       </section>
+      <!-- sezione con il form -->
       <section id="get-in-touch">
         <div class="cnt-small">
           <div class="get-in-touch__text">
@@ -222,6 +224,7 @@
         </div>
       </section>
     </main>
+    <!-- icone sticky -->
     <div class="icons-sticky">
           <button class="btn-icon" id="circle"><img src="svg/svg-2.svg" alt=""></button>
           <button class="btn-icon" id="shop"><img src="svg/svg-4.svg" alt=""></button>
@@ -232,6 +235,7 @@
           <img src="img/logo-img-01.png" alt="logo">
         </div>
         <p>Sometimes doing something seemingly demanding turns out to be fun. Here's the proof - Bryson, your brand new portfolio</p>
+        <!-- stampa dinamica delle icone social -->
         <ul class="social__list">
           <li v-for="social in socials" class="social-item "><a href="#" :class="social.class"><i :class="social.tag"></i></a></li>
         </ul>
