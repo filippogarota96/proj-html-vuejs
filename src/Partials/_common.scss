@@ -37,6 +37,8 @@ ul li {
     font-weight: 700px;
   }
 }
+
+//container piccolo che si ripete in varie sezioni
 .cnt-small {
   max-width: $cntSmall;
   margin: 0 auto;
@@ -74,7 +76,7 @@ ul li {
   .image:hover .overlay {
     border-width: 100px;
     border-radius: 0;
-    border-color: #ffff #FDE4D7 #FDE4D7 #ffff; 
+    border-color: #ffff $overlayColor $overlayColor #ffff; 
     background: #ffff;
    }
 

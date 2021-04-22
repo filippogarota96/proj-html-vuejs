@@ -61,6 +61,7 @@
 }
 
 
+//sezione we do
 #we-do {
   height: 630px;
   padding-top: 100px;
@@ -101,10 +102,12 @@
     }
       
 }
+
 .box__service:nth-child(2n - 1) {
   margin-right: 20px;
 }
 
+//stile sezione video
 #video {
   margin-bottom: 100px;
   padding: 0 60px;
@@ -123,6 +126,8 @@
       transform: translate(-50%, -50%);
     }
 }
+
+//stile sezione delle cards
 #cards {
   height: 900px;
   background-image: url('../img/h2-background-img-03.png');
@@ -159,6 +164,7 @@
   font-family: $fontFamilyMain;
 }
 
+//stile della sezione con il form
 
 #get-in-touch {
   margin: 150px 0;
@@ -206,7 +212,7 @@
 
 #circle {
   margin-bottom: 10px;
-  background-color:#EF2853
+  background-color:$iconSticky;
 }
 
 #shop {

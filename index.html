@@ -30,7 +30,7 @@
             <li v-for="(element, index) in navItems" v-if="element != 'svg/svg-1.svg'" class="list-item">
             <a href="#" :class ="elementActive == index ? 'active' : '' " @click="elementActive = index">{{element}}</a>
             </li>
-        <!-- per stampare l'immagine nell'array uso una condizione e una src dinamica -->
+        <!-- per stampare l'immagine nell'array uso una condizione e una src dinamici -->
             <li v-else class="list-item">
             <a href="">
               <img :src="element" alt="">
@@ -242,8 +242,7 @@
       </div>
       <a href="#" class="arrow-up"></a>
     </footer>
-  </div>
-       
+  </div>    
  <script src="js/script.js"></script> 
 </body>
 </html>
